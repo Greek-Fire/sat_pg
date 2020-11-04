@@ -1,0 +1,37 @@
+2020-10-28 06:38:14 PDT LOG:  duration: 8736.265 ms  execute S_1: COMMIT
+2020-10-28 11:14:22 PDT LOG:  received fast shutdown request
+2020-10-28 11:14:22 PDT LOG:  aborting any active transactions
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT LOG:  autovacuum launcher shutting down
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:22 PDT FATAL:  terminating connection due to administrator command
+2020-10-28 11:14:23 PDT LOG:  shutting down
+2020-10-28 11:14:23 PDT LOG:  database system is shut down
+2020-11-04 08:12:17 PST LOG:  database system was shut down at 2020-11-03 19:07:36 PST
+2020-11-04 08:12:17 PST FATAL:  the database system is starting up
+2020-11-04 08:12:17 PST LOG:  database system is ready to accept connections
+2020-11-04 08:12:17 PST LOG:  autovacuum launcher started
+2020-11-04 08:13:33 PST ERROR:  duplicate key value violates unique constraint "dynflow_coordinator_records_pkey"
+2020-11-04 08:13:33 PST DETAIL:  Key (id, class)=(delayed-executor, Dynflow::Coordinator::DelayedExecutorLock) already exists.
+2020-11-04 08:13:33 PST STATEMENT:  INSERT INTO "dynflow_coordinator_records" ("data", "id", "owner_id", "class") VALUES ('{"class":"Dynflow::Coordinator::DelayedExecutorLock","owner_id":"world:a7b36d40-f9ca-473d-bda1-e9a58a815fb6","world_id":"a7b36d40-f9ca-473d-bda1-e9a58a815fb6","id":"delayed-executor"}', 'delayed-executor', 'world:a7b36d40-f9ca-473d-bda1-e9a58a815fb6', 'Dynflow::Coordinator::DelayedExecutorLock') RETURNING "id"

@@ -1,0 +1,39 @@
+2020-11-03 11:52:29 PST ERROR:  syntax error at or near ")" at character 236
+2020-11-03 11:52:29 PST STATEMENT:  SELECT COUNT(DISTINCT "katello_repositories"."id") FROM "katello_repositories" LEFT OUTER JOIN "katello_root_repositories" ON "katello_root_repositories"."id" = "katello_repositories"."root_id" WHERE ((katello_repositories.root_id IN ())) AND "katello_repositories"."id" IN (SELECT DISTINCT "katello_repositories"."id" FROM "katello_repositories" INNER JOIN "katello_root_repositories" ON "katello_root_repositories"."id" = "katello_repositories"."root_id" INNER JOIN "katello_products" ON "katello_products"."id" = "katello_root_repositories"."product_id" WHERE (katello_repositories.id in (SELECT "katello_repositories"."id" FROM "katello_repositories" WHERE "katello_repositories"."root_id" IN (SELECT "katello_root_repositories"."id" FROM "katello_root_repositories" WHERE "katello_root_repositories"."product_id" IN (SELECT "katello_products"."id" FROM "katello_products"))) or katello_repositories.id in (SELECT "katello_repositories"."id" FROM "katello_repositories" INNER JOIN "katello_content_view_repositories" ON "katello_content_view_repositories"."repository_id" = "katello_repositories"."id" WHERE "katello_content_view_repositories"."content_view_id" IN (SELECT "katello_content_views"."id" FROM "katello_content_views")) or katello_repositories.id in (SELECT "katello_repositories"."id" FROM "katello_repositories" INNER JOIN "katello_content_view_versions" ON "katello_content_view_versions"."id" = "katello_repositories"."content_view_version_id" WHERE "katello_content_view_versions"."content_view_id" IN (SELECT "katello_content_views"."id" FROM "katello_content_views")) or katello_repositories.id in (SELECT "katello_repositories"."id" FROM "katello_repositories" WHERE "katello_repositories"."environment_id" IN (SELECT "katello_environments"."id" FROM "katello_environments"))) AND "katello_products"."organization_id" = $1 AND "katello_repositories"."content_view_version_id" = $2)
+2020-11-03 12:26:40 PST LOG:  received fast shutdown request
+2020-11-03 12:26:40 PST LOG:  aborting any active transactions
+2020-11-03 12:26:40 PST LOG:  autovacuum launcher shutting down
+2020-11-03 12:26:40 PST LOG:  shutting down
+2020-11-03 12:26:40 PST LOG:  database system is shut down
+2020-11-03 12:26:43 PST LOG:  database system was shut down at 2020-11-03 12:26:40 PST
+2020-11-03 12:26:43 PST LOG:  database system is ready to accept connections
+2020-11-03 12:26:43 PST LOG:  autovacuum launcher started
+2020-11-03 12:32:20 PST LOG:  duration: 16342.240 ms  execute <unnamed>: insert into cp_consumer (created, updated, annotations, autoheal, complianceStatusHash, cont_acc_cert_id, content_access_mode, entitlement_count, entitlementStatus, environment_id, consumer_idcert_id, keyPair_id, lastCheckin, name, owner_id, releaseVer, sp_role, serviceLevel, sp_status, sp_status_hash, type_id, sp_usage, username, uuid, id) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25)
+2020-11-03 12:32:20 PST DETAIL:  parameters: $1 = '2020-11-03 12:32:04.503-08', $2 = '2020-11-03 12:32:04.503-08', $3 = NULL, $4 = 't', $5 = NULL, $6 = NULL, $7 = NULL, $8 = '0', $9 = NULL, $10 = 'ddc278b34965dc5bc4f29083d91fa73b', $11 = NULL, $12 = NULL, $13 = NULL, $14 = 'at2.example.net', $15 = '4028d9e9756553b20175655411640001', $16 = NULL, $17 = '', $18 = '', $19 = NULL, $20 = NULL, $21 = '1000', $22 = '', $23 = 'foreman_admin', $24 = '3457cb6d-b248-4b78-963d-c0372c4385cd', $25 = '4028d9e9758fcadd01758fcf3b970004'
+2020-11-03 19:07:36 PST LOG:  received fast shutdown request
+2020-11-03 19:07:36 PST LOG:  aborting any active transactions
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST LOG:  autovacuum launcher shutting down
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST FATAL:  terminating connection due to administrator command
+2020-11-03 19:07:36 PST LOG:  shutting down
+2020-11-03 19:07:36 PST LOG:  database system is shut down

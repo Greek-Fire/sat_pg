@@ -1,0 +1,40 @@
+2020-10-30 15:12:55 PDT LOG:  database system was shut down at 2020-10-28 11:14:23 PDT
+2020-10-30 15:12:55 PDT FATAL:  the database system is starting up
+2020-10-30 15:12:55 PDT LOG:  database system is ready to accept connections
+2020-10-30 15:12:55 PDT LOG:  autovacuum launcher started
+2020-10-30 15:14:12 PDT ERROR:  duplicate key value violates unique constraint "dynflow_coordinator_records_pkey"
+2020-10-30 15:14:12 PDT DETAIL:  Key (id, class)=(delayed-executor, Dynflow::Coordinator::DelayedExecutorLock) already exists.
+2020-10-30 15:14:12 PDT STATEMENT:  INSERT INTO "dynflow_coordinator_records" ("data", "id", "owner_id", "class") VALUES ('{"class":"Dynflow::Coordinator::DelayedExecutorLock","owner_id":"world:4767072c-bbb6-4cbe-85cd-9383617fa3bf","world_id":"4767072c-bbb6-4cbe-85cd-9383617fa3bf","id":"delayed-executor"}', 'delayed-executor', 'world:4767072c-bbb6-4cbe-85cd-9383617fa3bf', 'Dynflow::Coordinator::DelayedExecutorLock') RETURNING "id"
+2020-10-30 15:16:03 PDT LOG:  received fast shutdown request
+2020-10-30 15:16:03 PDT LOG:  aborting any active transactions
+2020-10-30 15:16:03 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:03 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:03 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT FATAL:  terminating connection due to administrator command
+2020-10-30 15:16:04 PDT LOG:  autovacuum launcher shutting down
+2020-10-30 15:16:04 PDT LOG:  shutting down
+2020-10-30 15:16:04 PDT FATAL:  the database system is shutting down
+2020-10-30 15:16:04 PDT LOG:  database system is shut down
